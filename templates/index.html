@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Youtube Summariser</title>
+		<link rel="stylesheet" href="/static/css/reset.css" />
+		<link rel="stylesheet" href="/static/css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="Title">Summariser</h1>
+			<div class="URL">
+				<form action="/" method="post">
+					<label for="youtube_url">Enter Youtube URL:</label><br />
+					<input type="text" id="youtube_url" name="youtube_url" required />
+					<button type="submit">Generate Summary</button>
+				</form>
+			</div>
+			<section class="Summary">
+				{% if summary %}
+				<h2>Summary:</h2>
+				<p>{{ summary }}</p>
+				{% endif %}
+			</section>
+		</div>
+	</body>
+</html>
