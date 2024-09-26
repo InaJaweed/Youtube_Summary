@@ -45,6 +45,7 @@ This project is designed as a learning exercise, with a simple structure to help
 - Support summarization for multilingual transcripts.
 - Enhance the summarization algorithm for better accuracy.
 - Add user-friendly UI/UX improvements.
+- Deploy the application for public access.
 
 ## Disclaimer
 
