@@ -6,20 +6,26 @@
 		<title>Youtube Summariser</title>
 		<link rel="stylesheet" href="/static/css/reset.css" />
 		<link rel="stylesheet" href="/static/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="container">
-			<h1 class="Title">Summariser</h1>
-			<div class="URL">
+			<h1 class=>Summariser</h1>
+			<div>
 				<form action="/" method="post">
 					<label for="youtube_url">Enter Youtube URL:</label><br />
 					<input type="text" id="youtube_url" name="youtube_url" required />
 					<button type="submit">Generate Summary</button>
 				</form>
 			</div>
-			<section class="Summary">
+			<section class="summary">
 				{% if summary %}
-				<h2>Summary:</h2>
+				<h2 class="summary-title">Summary:</h2>
 				<p>{{ summary }}</p>
 				{% endif %}
 			</section>

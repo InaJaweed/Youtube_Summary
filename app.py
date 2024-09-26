@@ -45,7 +45,7 @@ def summarize_youtube_video(url):
                 sentence_scores[sentence] = sentence_scores.get(sentence, 0) + word_frequencies[word.text.lower()]
 
     # Generate summary
-    select_length = int(len(list(document.sents)) * 0.3)  # Selecting 30% of total sentences for the summary
+    select_length = int(len(list(document.sents)) * 0.1)  # Selecting 10% of total sentences for the summary
     # Select the top sentences based on their scores
     summary_sentences = nlargest(select_length, sentence_scores, key=sentence_scores.get)
     summary = ' '.join([sentence.text for sentence in summary_sentences])
