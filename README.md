@@ -1,4 +1,4 @@
-# # YouTube Video Transcript Summary
+# YouTube Video Transcript Summary
 
 ## Description
 
