@@ -30,15 +30,15 @@ This project is designed as a learning exercise, with a simple structure to help
 
 ## How It Works
 
-    1. Input a YouTube Video URL: The user inputs a YouTube URL in the web interface.
+1. Input a YouTube Video URL: The user inputs a YouTube URL in the web interface.
 
-    2. Transcript Extraction: The application fetches the transcript using the YouTube API and youtube_transcript_api.
+2. Transcript Extraction: The application fetches the transcript using the YouTube API and youtube_transcript_api.
 
-    3. Text Tokenization: The transcript is split into sentences using NLTK's sentence tokenization.
+3. Text Tokenization: The transcript is split into sentences using NLTK's sentence tokenization.
 
-    4. Summarization: The most significant sentences are selected using an extractive summarization technique.
+4. Summarization: The most significant sentences are selected using an extractive summarization technique.
 
-    5. Summary Display: The generated summary is displayed in the web interface.
+5. Summary Display: The generated summary is displayed in the web interface.
 
 ## Future Enhancements
 
